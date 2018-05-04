@@ -71,9 +71,7 @@ while loop:
             break
     if what == "2":
         print("========================================")
-        os.system("cd /data/data/com.termux/files/home")
         os.system("git clone https://github.com/DxSdzerLine/LINE")
-        os.system("cd /data/data/com.termux/files/home/LINE")
         print("芮芮的已讀機已安裝完成 :)")
         print("========================================")
         rmenu = input("是否返回主選單 (y/n): ")
