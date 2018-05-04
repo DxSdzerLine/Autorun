@@ -15,9 +15,9 @@ WeChat: DxSdzer
 最初更新: 2018/05/05
 最後更新: 2018/05/05 1.0
 ========================================
-0. 安裝基礎環境
-1. 安裝芮芮的已讀機
-2. 待推薦
+1. 安裝基礎環境
+2. 安裝芮芮的已讀機
+3. 待推薦
 0. 退出
 ========================================
 """)
@@ -27,7 +27,7 @@ loop = True
 while loop:
     menu()
     what = input("#: ")
-    if what == "0":
+    if what == "1":
         print("========================================")
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
@@ -69,19 +69,19 @@ while loop:
             menu()
         else:
             break
-    if what == "1":
+    if what == "2":
         print("========================================")
-        os.system("cd /sdcard/download/12345")
+        os.system("cd /data/data/com.termux/files/home")
         os.system("git clone https://github.com/DxSdzerLine/LINE")
-        os.system("cd /sdcard/download/12345/LINE")
-        print("芮芮的已讀機已安裝完成請至Download資料夾查看 :)")
+        os.system("cd /data/data/com.termux/files/home/LINE")
+        print("芮芮的已讀機已安裝完成 :)")
         print("========================================")
         rmenu = input("是否返回主選單 (y/n): ")
         if rmenu == "y":
             menu()
         else:
             break
-    if what == "2":
+    if what == "3":
         print("========================================")
         print("待推薦 :)")
         print("========================================")
@@ -90,6 +90,6 @@ while loop:
             menu()
         else:
             break
-    elif what == "9":
+    elif what == "0":
         print("Bye.")
         break
